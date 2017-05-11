@@ -14,7 +14,7 @@
 #define PLAYER 1
 
 // Which pins are attached to buttons?
-#define BUTTON_PINS { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 }
+#define BUTTON_PINS 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
 // Which of those is connected to the START button?
 // Pressing that will also simulate a coin insert
@@ -51,7 +51,7 @@
 #endif
 
 
-int pins[] = BUTTON_PINS;
+int pins[] = { BUTTON_PINS };
 int states[2 * BUTTON_COUNT] = { false };
 
 int getCompliementKeyIndex(int keyIndex){
